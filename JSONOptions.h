@@ -7,6 +7,9 @@
  */
 
 
+// Added -sjg
+#define NDEBUG
+
 /*
  *  JSON_LIBRARY must be declared if libjson is compiled as a static or dynamic 
  *  library.  This exposes a C-style interface, but none of the inner workings of libjson
@@ -223,7 +226,7 @@
  *  parsing json that has comments in it as it simply ignores them, but with this option
  *  it keeps the comments and allows you to insert further comments
  */
-#define JSON_COMMENTS
+//#define JSON_COMMENTS
 
 
 /*
@@ -321,7 +324,7 @@
  *  compatibility between major releases.  It is highly recommended that you move your functions
  *  over to the new equivalents
  */
-#define JSON_DEPRECATED_FUNCTIONS
+//#define JSON_DEPRECATED_FUNCTIONS
 
 
 /*
