@@ -8,7 +8,9 @@
 
 
 // Added -sjg
+#ifndef NDEBUG
 #define NDEBUG
+#endif
 
 /*
  *  JSON_LIBRARY must be declared if libjson is compiled as a static or dynamic 
