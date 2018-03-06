@@ -329,7 +329,7 @@ bool JSONValidator::isValidNamedObject(const json_char * &ptr  DEPTH_PARAM) json
 bool JSONValidator::isValidObject(const json_char * & ptr  DEPTH_PARAM) json_nothrow {
     //ptr should currently be pointing past the {, so this must be the start of a name, or the closing }
     //ptr will end up past the last }
-    do{
+//    do{
 	   switch(*ptr){
 		  case JSON_TEXT('\"'):
 			 return isValidNamedObject(ptr  DEPTH_ARG(depth_param));
@@ -339,7 +339,7 @@ bool JSONValidator::isValidObject(const json_char * & ptr  DEPTH_PARAM) json_not
 		  default:
 			 return false;
 	   }
-    } while (*++ptr);
+//    } while (*++ptr);
     return false;
 }
 
